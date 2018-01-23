@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" media="screen" href='/css/font-awesome.min.css'>
+    <link rel="stylesheet" media="screen" href='/css/metro-bootstrap.css'>
+    <link rel="stylesheet" href = "/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/print.css" media="print" />
+    <link rel="manifest" href="manifest.json">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src='/js/bootstrap.min.js' type='text/javascript'></script>
+
+    <title> PUWER Assessment</title>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="/images/star_icon.png" /></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+              <li><a href="/puwer"><i class="fa fa-chart"></i>  PUWER</a></li>
+
+
+
+          </ul>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+
+
+<div class="jumbotron">
+    <h1>PUWER Assessment</h1>
+</div>
+
+
+<div class="container-fluid col-md-12">
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th rowspan="3">PUWER Assessment</th>
+                <th>PUWER Ass. No.</th>
+                <td style="min-width: 200px; max-width: 40%"><input type="text" name="puwerNo" /></td>
+            </tr>
+            <tr>
+                <th>COSHH Risk Ass. No.</th>
+                <td ><input type="text" name="coshhNo" /></td>
+            </tr>
+            <tr>
+                <th>Risk Assessment No.</th>
+                <td><input type="text" name="riskNo" /></td>
+            </tr>
+            <tr class="header">
+                <th colspan="3">PUWER Assessment Checklist</th>
+            </tr>
+            <tr>
+                <th>Equipment description and location</th>
+                <td colspan=2><input type="text" name="equipment" /></td>
+            </tr>
+            <tr>
+                <th>Serial Number or Plant Number</th>
+                <td colspan=2><input type="text" name="serialNo" /></td>
+            </tr>
+            <tr>
+                <th rowspan="3">PUWER Assessor(s)</th>
+                <th>Name</th>
+                <th>Signed</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="assessor_name_1" /></td>
+                <td><input type="text" name="assessor_sign_1" /></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="assessor_name_2" /></td>
+                <td><input type="text" name="assessor_sign_2" /></td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
+
+<div class="container-fluid col-md-12">
+    <table class="table table-condensed">
+        <tbody>
+            <tr class="header">
+                <th colspan=2 >Reason for PUWER Assessment (tick)</th>
+                <th>Comments/details</th>
+            </tr>
+
+            <tr class="reason">
+                <td style="width: 300px">Commissioning</td>
+                <td style="width: 20px;"><input name="commissioning_check" type="checkbox" unchecked/></td>
+                <td></td>
+            </tr>
+            <tr class="reason">
+                <td>Recommissioning</td>
+                <td><input name="recommissioning_check" type="checkbox" unchecked/></td>
+                <td></td>
+            </tr>
+            <tr class="reason">
+                <td>Modification</td>
+                <td><input name="Modification_check" type="checkbox" unchecked/></td>
+                <td></td>
+            </tr>
+            <tr class="reason">
+                <td>After a repair (due to significant damage)</td>
+                <td><input name="repair_check" type="checkbox" unchecked/></td>
+                <td></td>
+            </tr>
+            <tr class="reason">
+                <td>After a significant change</td>
+                <td><input name="change_check" type="checkbox" unchecked/></td>
+                <td></td>
+            </tr>
+            <tr class="reason">
+                <td>Due to an incident</td>
+                <td><input name="incident_check" type="checkbox" unchecked/></td>
+                <td></td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
+<div class="container-fluid col-md-12">
+    <table class="table table-condensed">
+        <tbody>
+            <tr class="header">
+                <th  colspan=2>Machine Condition</th>
+                <th>Y / N / N.A.</th>
+                <th>Comments inc. action required</th>
+            </tr>
+
+            <tr class="question">
+                <th class="number">1</th>
+                <td>Has a copy of the CE declaration been attached?</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 4. Suitability of Work Equipment</td>
+            </tr>
+            <tr class="question">
+                <th>2</th>
+                <td>Is the equipment suitable and sufficient for intended/current application?</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>3</th>
+                <td>Is the intended/current use in line with the manufacturer's instructions?</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>4</th>
+                <td>Is there a Quick Reference Guide of User Manual (stored with the equipment) to explain to a new user how to use the equipment?</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>5</th>
+                <td>Is the environment acceptable?</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>6</th>
+                <td>Is the equipment designed ergonomically for human operation?</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 5. Maintenance</td>
+            </tr>
+            <tr class="question">
+                <th>7</th>
+                <td>Is the equipment covered by a planned preventative scheme?</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>8</th>
+                <td>Is the intended/current use in line with the manufacturer's instructions?</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>9</th>
+                <td>If the equipment is hired, is there an agreement with respect as to who will undertake maintenance?</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>10</th>
+                <td>Is a maintenance log maintained?</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>11</th>
+                <td>Are people carrying out maintenance operations competant?</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 6. Inspection  - N.B This regulation does not apply to Power Presses and Equipment for lifting loads</td>
+            </tr>
+            <tr>
+                <td colspan=4>INFORMATION - To comply with this regulation, it is necessary to ensure that the equipment is subject to a pre-operative safety check</td>
+            </tr>
+            <tr class="question">
+                <th>12</th>
+                <td> Has the equipment been checked before being put to work for the first time (commissioned)? </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>13</th>
+                <td>   Has the equipment been checked before being put to work after being moved to a new location, modified or repaired (recommissioned)?  </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>14</th>
+                <td>   Are periodic saftey checks scheduled to ensure any deterioration in safety is detected and remedied in good time?  </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>15</th>
+                <td>   The extent of the inspection shoudl be determined by risk assessment in conjunction with the manufacturer's recommendations  </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>16</th>
+                <td>  Are records of inspection maintained? </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>17</th>
+                <td> Are faults, defects and repairs being logged? </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 7. Specific Risks</td>
+            </tr>
+            <tr class="question">
+                <th>18</th>
+                <td>Is the use of equipment restricted to the use of trained personnel?</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>19</th>
+                <td>What specific Health and Safety risks could be associated with the use of the equipment?</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>20</th>
+                <td>What risk control measures are in place to mitigate/ manage the above risks?</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>21</th>
+                <td>How is a user of the equipment being made aware of the risks?</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>22</th>
+                <td>Are repairs, maintenance or servicing of the equipment restricted to adequately trained persons who have been designated to perform those operations?</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 8. Information and Instruction</td>
+            </tr>
+            <tr class="question">
+                <th>23</th>
+                <td>Are operating instructions available?</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>24</th>
+                <td>Are maintenance instructions available?</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 9. Training</td>
+            </tr>
+            <tr class="question">
+                <th>25</th>
+                <td>  Have the training needs for competancy to perate this equipment been evaluated?  </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>26</th>
+                <td>  Has training necessary for competancy to maintain this equipment been evaluated? </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr class="question">
+                <th>26</th>
+                <td> Have the relevant competancies been identified on the operators Safe Systems of Work?  </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>28</th>
+                <td>  Has other relevant training been carried out when necessary?  </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr class="subheader">
+                <td colspan=4>REG 10. Conformity with Community Requirements</td>
+            </tr>
+            <tr class="question">
+                <th>29</th>
+                <td>  Was the equipment first supplied for use after 31st Dec 1992?  </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>30</th>
+                <td>  Was the equipment first supplied for use before 31st Dec 1992 but either modified or refurbished after that date? </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr class="question">
+                <th>31</th>
+                <td> If either of the above apply, checks should be made to ensure CE marking of the equipment has taken place and a copy of the CE Delcaration of Conformity obtained. </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 11. Dangerous parts of machinery</td>
+            </tr>
+            <tr class="question">
+                <th>32</th>
+                <td>  Are all dangerous parts of the machinery guarded so as to prevent all of the following?  </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>33</th>
+                <td>  ELECTRIC SHOCK - Consider Earth bonding of hinged metal panels, high voltage supply management, high voltage outputs etc. </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>34</th>
+                <td> ENTANGLEMENT - Loose clothing, hair, jewellery etc.  </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>35</th>
+                <td> NIPS - Counter-rotating parts that could pinch skin or clothing on parts of the body  </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>36</th>
+                <td>  TRAPPING - Moving parts of the equipment that could trap parts of the body </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>37</th>
+                <td>   </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>38</th>
+                <td>   </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>39</th>
+                <td>   </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>40</th>
+                <td>   </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>41</th>
+                <td>   </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 12. Protection against specified hazards</td>
+            </tr>
+            <tr class="question">
+                <th>42</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>43</th>
+                <td>   </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>44</th>
+                <td>   </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>45</th>
+                <td>   </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>46</th>
+                <td>   </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>47</th>
+                <td>   </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 13. High or very low temperature</td>
+            </tr>
+            <tr class="question">
+                <th>48</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 14. Controls for starting up of making significant changes in the operating conditions</td>
+            </tr>
+            <tr class="question">
+                <th>49</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 15. Stop Control</td>
+            </tr>
+            <tr class="question">
+                <th>50</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 16. Emergency Stop Control</td>
+            </tr>
+            <tr class="question">
+                <th>51</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>52</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 17. Controls</td>
+            </tr>
+            <tr class="question">
+                <th>53</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>54</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 18. Control systems</td>
+            </tr>
+            <tr class="question">
+                <th>55</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 19. Isolation from sources of energy</td>
+            </tr>
+            <tr class="question">
+                <th>56</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>57</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>58</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>59</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>60</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>61</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 20. Stability</td>
+            </tr>
+            <tr class="question">
+                <th>62</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>63</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>64</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>65</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>66</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 21. Lightning</td>
+            </tr>
+            <tr class="question">
+                <th>67</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>68</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 22. Maintenance Operations</td>
+            </tr>
+            <tr class="question">
+                <th>69</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>70</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr class="subheader">
+                <td colspan=4>REG 23. Markings</td>
+            </tr>
+            <tr class="question">
+                <th>71</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>72</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>73</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>74</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 24. Warnings</td>
+            </tr>
+            <tr class="question">
+                <th>75</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>76</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>77</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>78</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr class="subheader">
+                <td colspan=4>REG 25. Employees carried on mobile work equipment (MWE)</td>
+            </tr>
+            <tr class="question">
+                <th>79</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>80</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>81</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>82</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 26. Rolling over of mobile work equipment (MWE)</td>
+            </tr>
+            <tr class="question">
+                <th>83</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>84</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>85</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>86</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 27. Overturning of forklift trucks</td>
+            </tr>
+            <tr class="question">
+                <th>87</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>88</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 28. Self propelled work equipment (SPWE)</td>
+            </tr>
+            <tr class="question">
+                <th>89</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>90</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>91</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>92</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>93</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+            <tr class="subheader">
+                <td colspan=4>REG 37. Transitioning provision</td>
+            </tr>
+            <tr class="question">
+                <th>94</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="question">
+                <th>95</th>
+                <td>    </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+</div>
+
+
+
+
+<div class="container-fluid col-md-12" style="height: 100px;">
+    <div class="btn btn-lg btn-success" onclick="saveAssessment()"><i class="fa fa-save"></i>    Save assessment</div>
+</div>
+
+<div id="noteModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+      <h2> Test Notes </h2>
+    <p>Some text in the Modal..</p>
+  </div>
+</div>
+
+
+
+<script src="//cdn.jsdelivr.net/pouchdb/6.2.0/pouchdb.min.js"></script>
+<script src="/js/pouchdb.find.js"></script>
+<script src="/js/papaparse.min.js" type="text/javascript"></script>
+<script src="/js/moment.js" type="text/javascript"></script>
+<script src="/js/jquery.datatables.min.js"></script>
+<script src="/js/dataTables.bootstrap.min.js"></script>
+<script src="/js/puwer.js" type="text/javascript"></script>
+</body>
+
+</html>

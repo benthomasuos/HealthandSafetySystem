@@ -1,0 +1,199 @@
+
+html {
+    position: relative;
+    max-height: 90%;
+}
+
+
+body {
+    padding: 10px;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+a.disabled {
+    pointer-events: none;
+}
+
+.navitem{
+    float:left;
+    min-width: 60px;
+    height: 40px;
+    font-size: 1.2em;
+    border: solid gray 1px;
+    padding: 8px 4px;
+    margin: 0px 4px;
+    background-color: #99d;
+    color: #fff
+}
+
+.navitem:hover{
+    border: solid blue 1px;
+    background-color: #66a;
+    color: #fff
+}
+.navitem:active{
+    border: solid blue 1px;
+    background-color: #6a6;
+    color: #fff
+}
+
+.graphDiv{
+    position: relative;
+    min-width: 80%;
+    min-height: 400px;
+    padding: -30px;
+    margin: 10px;
+    border: solid grey 1px;
+
+}
+
+.controls{
+    max-width: 220px;
+    float:right;
+}
+
+#tests{
+    float:right;
+}
+
+td + i.fa-trash:hover{
+    color: #777;
+}
+
+.plotted {
+    background-color: #d34;
+}
+
+.value {
+    width:60px;
+}
+
+
+#push{
+    height: 100px;
+}
+#footer {
+    height: 100px;
+    margin-bottom: 100px;
+    background-color: #FF740D;
+    width: 100%;
+    overflow:hidden;
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.alert-warning{
+    border-top: solid 2px #fff ;
+    background-color: #34C2FF;
+}
+
+.jumbotron {
+    height: 100px;
+    padding: 20px
+}
+
+.jumbotron > h1{
+    margin: auto;
+    text-align: center;
+
+}
+
+
+th {
+    border: solid black 1px;
+}
+td {
+    border: solid black 1px;
+}
+
+.header {
+    background-color: #99f;
+}
+
+.header > th {
+    padding-left: 10px
+}
+
+.subheader{
+    margin-top: 8px;
+    background-color: #779;
+    color: #fff
+
+}
+
+.subheader > td {
+    padding-left: 10px
+}
+
+.question > th{
+    text-align: center;
+    width: 40px
+}
+
+.question > td:nth-of-type(1){
+    width: 300px;
+}
+
+.question > td:nth-of-type(2){
+    width: 80px;
+}
+
+ div[contenteditable='true'] {
+    padding-left: 4px;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none
+
+}
+div[contenteditable='true']:hover {
+    background-color: #eee
+
+}
+
+input[type=text]{
+    width: 100%;
+    height: 100%
+
+}
